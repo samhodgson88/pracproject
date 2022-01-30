@@ -1,92 +1,123 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-      background-color: #87CEFA; 
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #87CEFA; 
+}
 
-  /* navbar will give height and background color to page to the page */
-  .navbar {
-   height: 75px;
-   background-color: #B0E0E6;  
-  }
-   /* just focus on words and spacing */
-  #title {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom:20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .container-lg {
-    background-color: #87CEFA;  
-  }
+/* navbar will give height and background color to page to the page */
+.navbar {
+ height: 75px;
+ background-color: #B0E0E6;  
+}
+ /* just focus on words and spacing */
+#title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 
-  .true {
+}
+
+
+
+/* container with hard border for centre board of quiz true and false buttons floated left and right */
+
+.container {
+  margin-left:400px;
+  border: 6px dashed blue;
+  height: 500px;
+  width: 1000px;
+}
+  #true {
     background-color: red; 
     font-family: Arial, Helvetica, sans-serif; 
     border-radius: 25px;
     background: #73AD21;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    margin-top: 220px;
-    margin-left: 750px;
-    justify-content: center;
-    align-items: center;
+    height:100px;
+    width:20%;
+    float:left;
+    margin-top:380px;
+    margin-left:10px;
+  }
+ #false{
+  font-family: Arial, Helvetica, sans-serif; 
+  border-radius: 25px;
+  background: #73AD21;
+  height: 100px;
+  width: 20%;
+  float:right;
+  margin-top:295px;
+  margin-right:10px;  
+}
 
-  }
-  .false {
-    font-family: Arial, Helvetica, sans-serif; 
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    margin-top: 220px;
-    margin-left: 200px;
-    margin-right: 75px;
-    justify-content: center;
-    align-items: center;
-  }
-  .refresh {
-    font-family: Arial, Helvetica, sans-serif; 
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    margin-left: 70px;
-    
-  }
-  .ready {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom:20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;  
-  }
+/* this ID is the are you ready to go text will be used with JS */
+#ready {
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #73AD21;
+  border-radius: 25px;
+  float:right; 
+  margin-right:400px;
+  padding-top:50px;
+}
+
+/* container-highscore covers left hand side of the page and will include high score, score and attempts left*/ 
+
+.container-highscore {
+  height:300px;
+  width:200px;
+  background-color:red;
+  margin-bottom:800px;
+  margin-top:-300px;
+  margin-left:30px;
+  
+}
+
 .label-score {
-  font-family: Arial, Helvetica, sans-serif;  
-  margin-bottom: 15px;
-  height: 50px;
-  width: 100px;
+  font-family: Arial, Helvetica, sans-serif; 
+  float:left;
+  height:200px;
+  width:100%;
+  margin-top:-230px;
 }
+
 .label-highscore {
-    font-family: Arial, Helvetica, sans-serif; 
-    margin-bottom: 15px;
-    height: 50px;
-    width: 100px;
+  font-family: Arial, Helvetica, sans-serif; 
+  float:left;
+  height:200px;
+  width:100%;
+  margin-top:-200px;
 }
-.label-tries-left{
-    font-family: Arial, Helvetica, sans-serif; 
-    margin-bottom: 15px;
-    height: 50px;
-    width: 100px;
+.label-tries-left {
+  font-family: Arial, Helvetica, sans-serif; 
+  float:left;
+  height:200px;
+  width:100%;
+  margin-top:-160px;
 }
+/* container top left for the refresh button */
+.containerRefresh {
+  background-color: purple; 
+  height:200px;
+  width:200px;
+  margin-left:30px;
+  margin-top:5px;
+}
+
+.refresh {
+  font-family: Arial, Helvetica, sans-serif; 
+  border-radius: 25px;
+  background: #73AD21;
+  height:100px;
+  width:100px;
+  float: centre;
+  margin-top:50px;
+  margin-left:50px;
+}
+
+
+
