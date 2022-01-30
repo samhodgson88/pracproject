@@ -14,29 +14,26 @@
         <h3 id= "title"> Sam Hodgson's Sports quiz</h3>
     </div>
 </nav> 
-
-<div class="container-lg">
-    <button type="button" class="btn refresh">Refresh</button>
-    <h2 class="ready"> Are you ready? </h2>
-</div>    
-
-<div class="container">
-    <div class="row">
-         <button type="button" class="btn true">True</button>
-         <button type="button" class="btn false">False</button>
+    <div class="containerRefresh">
+     <button type="button" class="btn refresh">Refresh</button>
+     </div>    
+        <div class="container">
+          <div class="row">
+           <button onclick="startQuiz()" class= "AreYouReady" id="ready"> Are you ready? </button>
+           <button  type="button" class="btnTrue"  id ="true">True</button>
+           <button type="button" class="btnFalse" id="false">False</button>
        </div>
-     </div>
- </div>      
-       
-  
-    <h3 class="label-score">💯 Score: <span class="score">20</span></h3>
-        <h3 class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </h3>
-        <h3 class="label-tries-left">
-            Tries left: <span class="tries">10</span>
-        </h3>
-</div>
-<script src="/asset/javascript/script.js"></script>
-</body>
+        </div>
+        <div class="container-highscore">
+            <h3 class="label-score">💯 Score: <span class="score">10</span></h3>
+            <h3 class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+            </h3>
+            <h3 class="label-tries-left">
+                🏋️‍♂️ Tries left: <span class="tries">10</span>
+            </h3>
+        </div>
+        
+        <script src="/asset/javascript/script.js"></script>
+ </body>
 </html>
